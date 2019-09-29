@@ -130,7 +130,7 @@
 #### API
 |属性|说明|类型|默认值|
 | :-----| :---- | :---- | :---- |
-|type | 按钮类别| 可选值：success / warn / danger | String| primary|
+|type | 按钮类别 可选值：success / primary |  String | primary|
 |size|按钮尺寸，可选值：large / medium / small|String|medium|
 |width|按钮宽度，可选值：80 / 105 / 164 /196  /222 /343 |Number/ String|medium|
 |href|link的href属性|String|-|
