@@ -1,6 +1,5 @@
 const path = require('path')
 function resolve (dir) {
-    console.log(path.join(__dirname, '../' ,'..', dir))
     return path.join(__dirname, '../' ,'..', dir)
 }
 
@@ -14,15 +13,12 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Blog', link: 'https://juejin.im/user/5a96817df265da4e9c635c39/posts' },
-            { text: 'Github', link: 'https://github.com/qiudongwei/jdk-ui' },
+            { text: 'Blog', link: 'https://github.com/Ex-Caliburn/Jdk-UI#readme' },
+            { text: 'Github', link: 'https://github.com/Ex-Caliburn/Jdk-UI' },
         ],
         sidebar: [
-            ['/views/button', '按钮 Button'],
-            // ['/views/button', '按钮 Button'],
-            // ['/views/icon', '图标 Icon'],
-            // ['/views/switch', '开关 Switch'],
-            // ['/views/table', '表格 Table']
+          ['/views/guide', '快速上手'],
+          ['/views/button', '按钮 Button'],
         ]
     },
     markdown: {
@@ -30,7 +26,7 @@ module.exports = {
     },
     scss: {
       // 公共组件调用公共样式
-      includePaths: ["./scss/docs.scss"]
+      includePaths: ['./scss/docs.scss']
     },
     configureWebpack: {
         resolve: {

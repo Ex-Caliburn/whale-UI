@@ -1,7 +1,6 @@
 import button from './button.vue'
 
-button.install = function (Vue, opt) {
-  console.log(2, button)
+button.install = function (Vue) {
   Vue.component(button.name, button)
 }
 

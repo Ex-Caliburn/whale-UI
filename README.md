@@ -1,25 +1,29 @@
-## JDk UI
+# jdk-ui
 
-### Install
-```shell
-npm i jdk-ui -S
+## Project setup
+```
+npm install jdk-ui
 ```
 
-### Usage
-
-```shell
-import Vue from 'vue'
-import jdk from 'jdk-ui'
-Vue.use(jdk)
+### Compiles and hot-reloads for development
+```
+npm run serve
 ```
 
-### Project setup
+### Compiles and minifies for production
 ```
-npm install
-
-npm run dev
-
-npm run build:docs
-
-npm run build:lib
+npm run build
 ```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
