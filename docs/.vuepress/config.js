@@ -14,8 +14,8 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Blog', link: 'https://juejin.im/user/5a96817df265da4e9c635c39/posts' },
-            { text: 'Github', link: 'https://github.com/qiudongwei/jdk-ui' },
+            { text: 'Blog', link: 'https://github.com/Ex-Caliburn/Jdk-UI#readme' },
+            { text: 'Github', link: 'https://github.com/Ex-Caliburn/Jdk-UI' },
         ],
         sidebar: [
             ['/views/button', '按钮 Button'],
