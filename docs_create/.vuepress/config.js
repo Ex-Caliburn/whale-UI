@@ -5,7 +5,7 @@ function resolve (dir) {
 
 module.exports = {
     title: 'Jdk UI',
-    base: '/jdk-ui/',
+    base: '/Jdk-UI/',
     description: 'Jdk UI Document',
     head: [
         ['link', { rel: 'shortcut icon', href: '/favicon.ico' }]
