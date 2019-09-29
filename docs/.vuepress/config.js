@@ -26,7 +26,6 @@ module.exports = {
     },
     scss: {
       // 公共组件调用公共样式
-      includePaths: ['./scss/docs.scss']
     },
     configureWebpack: {
         resolve: {
