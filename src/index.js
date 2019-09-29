@@ -1,8 +1,6 @@
 import components from './components'
-
-function install(Vue, opts = {}) {
+function install(Vue) {
   Object.values(components).forEach((each) => {
-    console.log(each.name, each)
     Vue.component(each.name, each)
   })
 }
