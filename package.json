@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target dist --name jdk ./src/components/index.js",
-    "dev:docs": "cd docs && vuepress dev",
-    "build:docs": "vuepress build docs",
+    "dev:docs": "cd docs_create && vuepress dev",
+    "build:docs": "vuepress build docs_create --dest test",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
