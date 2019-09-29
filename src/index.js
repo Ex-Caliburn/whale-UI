@@ -1,5 +1,4 @@
-import button from './components/button'
-let components = [button]
+import components from './components'
 
 function install(Vue, opts = {}) {
   Object.values(components).forEach((each) => {
