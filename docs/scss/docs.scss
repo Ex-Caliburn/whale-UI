@@ -1,0 +1,124 @@
+::-webkit-scrollbar{ width: 9px; height: 9px; border-radius: 8px; }
+::-webkit-scrollbar-thumb{ border-radius: 4px; background: rgba(0,0,0,.2); }
+::-webkit-scrollbar-button{ display: none; border-radius: 4px; }
+::-webkit-scrollbar-track{ background: #eee; }
+.ml5 { margin-left: 5px; }
+.mr5 { margin-right: 5px; }
+.mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
+.component-wrapper{ padding: 10px; }
+
+.jdk-button{
+  margin: 10px 10px 10px 0;
+}
+
+/*flex布局类 容器*/
+//水平均分对齐
+.flex-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+//水平排列 默认排列
+.flexh {
+  display: flex;
+}
+
+//水平排列
+.flex-row {
+  flex-direction: row;
+}
+
+//水平排列 倒序
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+//垂直排列
+.flexv {
+  @extend .flexh;
+  flex-direction: column;
+}
+
+
+//水平排列, 主轴x, 交叉轴Y, 竖直排列，主轴y, 交叉轴X, 方向默认从上到下， 从左到右
+// 交叉轴居中
+.flex-vcenter {
+  align-items: center;
+}
+
+// 交叉轴拉伸
+.flex-stretch {
+  align-items: stretch;
+}
+
+// 交叉轴低端
+.flex-vend {
+  align-items: flex-end;
+}
+
+// 交叉轴起始
+.flex-vstart {
+  align-items: flex-start;
+}
+
+// 在主轴上的对齐方式。
+.flex-hstart {
+  justify-content: flex-start
+}
+
+// 远端对齐
+.flex-between {
+  justify-content: space-between;
+}
+
+// 近端对齐
+.flex-around {
+  justify-content: space-around;
+}
+
+// 主轴居中
+.flex-hcenter {
+  justify-content: center;
+}
+
+.flex-hend {
+  justify-content: flex-end;
+}
+
+/*flex布局类 项目*/
+// 设置给子项，存在剩余空间，和其他子项按flex-grow值平分剩余空间 ， 0 为不放大
+.flex-grow {
+  flex-grow: 1;
+  /* default 0 */
+}
+
+// 存在剩余空间，也不放大
+.flex0 {
+  flex: none;
+}
+
+// 存在剩余空间，按比例分剩余空间
+.flex1 {
+  flex: 1;
+}
+
+//允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，
+// 表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
+.flex-self-start {
+  align-self: flex-start;
+}
+
+.flex-self-center {
+  align-self: center;
+}
+
+.flex-self-end {
+  align-self: flex-end;
+}
+
+/*flex换行*/
+.flex-wrap {
+  flex-wrap: wrap;
+}
