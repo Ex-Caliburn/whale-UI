@@ -19,13 +19,38 @@ module.exports = {
         sidebar: [
           ['/views/guide', '快速上手'],
           ['/views/button', '按钮 Button'],
-        ]
+        ],
+      // 第三方搜索
+      // algolia: {
+      //   apiKey: '<API_KEY>',
+      //   indexName: '<INDEX_NAME>'
+      // }
     },
     markdown: {
         lineNumbers: false
     },
     scss: {
       // 公共组件调用公共样式
+    },
+    plugins: {
+      // '@vuepress/pwa': {
+      //   serviceWorker: true,
+      //   updatePopup: {
+      //     '/': {
+      //       message: "New content is available.",
+      //       buttonText: "Refresh"
+      //     },
+      //     '/zh/': {
+      //       message: "发现新内容可用",
+      //       buttonText: "刷新"
+      //     },
+      //     '/ru/': {
+      //       message: 'Доступно обновление контента',
+      //       buttonText: 'Обновить'
+      //     }
+      //   }
+      // },
+      // '@vuepress/nprogress': {},
     },
     configureWebpack: {
         resolve: {
