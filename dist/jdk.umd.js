@@ -174,57 +174,11 @@ module.exports = {};
 
 /***/ }),
 
-/***/ "2338":
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/tc39/proposal-object-getownpropertydescriptors
-var $export = __webpack_require__("b2f5");
-var ownKeys = __webpack_require__("2e9a");
-var toIObject = __webpack_require__("3a68");
-var gOPD = __webpack_require__("acb9");
-var createProperty = __webpack_require__("f59b");
-
-$export($export.S, 'Object', {
-  getOwnPropertyDescriptors: function getOwnPropertyDescriptors(object) {
-    var O = toIObject(object);
-    var getDesc = gOPD.f;
-    var keys = ownKeys(O);
-    var result = {};
-    var i = 0;
-    var key, desc;
-    while (keys.length > i) {
-      desc = getDesc(O, key = keys[i++]);
-      if (desc !== undefined) createProperty(result, key, desc);
-    }
-    return result;
-  }
-});
-
-
-/***/ }),
-
 /***/ "265a":
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__("3754").document;
 module.exports = document && document.documentElement;
-
-
-/***/ }),
-
-/***/ "2e9a":
-/***/ (function(module, exports, __webpack_require__) {
-
-// all object keys, includes non-enumerable and symbols
-var gOPN = __webpack_require__("a891");
-var gOPS = __webpack_require__("f7c1");
-var anObject = __webpack_require__("a013");
-var Reflect = __webpack_require__("3754").Reflect;
-module.exports = Reflect && Reflect.ownKeys || function ownKeys(it) {
-  var keys = gOPN.f(anObject(it));
-  var getSymbols = gOPS.f;
-  return getSymbols ? keys.concat(getSymbols(it)) : keys;
-};
 
 
 /***/ }),
@@ -1123,44 +1077,20 @@ if (typeof window !== 'undefined') {
     __webpack_require__("e67d")
   }
 
-  var setPublicPath_i
-  if ((setPublicPath_i = window.document.currentScript) && (setPublicPath_i = setPublicPath_i.src.match(/(.+\/)[^/]+\.js(\?.*)?$/))) {
-    __webpack_require__.p = setPublicPath_i[1] // eslint-disable-line
+  var i
+  if ((i = window.document.currentScript) && (i = i.src.match(/(.+\/)[^/]+\.js(\?.*)?$/))) {
+    __webpack_require__.p = i[1] // eslint-disable-line
   }
 }
 
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// EXTERNAL MODULE: ./node_modules/_core-js@2.6.9@core-js/modules/es7.object.get-own-property-descriptors.js
-var es7_object_get_own_property_descriptors = __webpack_require__("2338");
-
-// EXTERNAL MODULE: ./node_modules/_core-js@2.6.9@core-js/modules/es6.array.iterator.js
-var es6_array_iterator = __webpack_require__("dac5");
-
-// EXTERNAL MODULE: ./node_modules/_core-js@2.6.9@core-js/modules/es6.object.keys.js
-var es6_object_keys = __webpack_require__("fb37");
-
-// CONCATENATED MODULE: ./node_modules/_@babel_runtime@7.6.3@@babel/runtime/helpers/esm/defineProperty.js
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-// EXTERNAL MODULE: ./node_modules/_core-js@2.6.9@core-js/modules/es6.function.name.js
-var es6_function_name = __webpack_require__("7364");
-
 // EXTERNAL MODULE: ./node_modules/_core-js@2.6.9@core-js/modules/web.dom.iterable.js
 var web_dom_iterable = __webpack_require__("f763");
+
+// EXTERNAL MODULE: ./node_modules/_core-js@2.6.9@core-js/modules/es6.function.name.js
+var es6_function_name = __webpack_require__("7364");
 
 // CONCATENATED MODULE: ./node_modules/_cache-loader@3.0.1@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"067540da-vue-loader-template"}!./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@3.0.1@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./src/components/button/button.vue?vue&type=template&id=650c94b4&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.tag,{tag:"component",staticClass:"jdk-button",class:[
@@ -1415,22 +1345,12 @@ button_button.install = function (Vue) {
 // CONCATENATED MODULE: ./src/components/index.js
 
 
-
-
-
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-
 var components = [components_button];
 var version = '0.1.4';
 
 function install(Vue) {
   components.forEach(function (Component) {
-    Vue.component(Component.name, Component);
+    Vue.use(Component);
   });
 }
 
@@ -1438,10 +1358,10 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-/* harmony default export */ var src_components = (_objectSpread({
+/* harmony default export */ var src_components = ({
   version: version,
   install: install
-}, components));
+});
 
 // CONCATENATED MODULE: ./node_modules/_@vue_cli-service@3.11.0@@vue/cli-service/lib/commands/build/entry-lib.js
 /* concated harmony reexport install */__webpack_require__.d(__webpack_exports__, "install", function() { return install; });
@@ -1607,22 +1527,6 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ "f59b":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var $defineProperty = __webpack_require__("ddf7");
-var createDesc = __webpack_require__("7dea");
-
-module.exports = function (object, index, value) {
-  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
-  else object[index] = value;
-};
-
-
-/***/ }),
-
 /***/ "f763":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1684,47 +1588,6 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
     if (explicit) for (key in $iterators) if (!proto[key]) redefine(proto, key, $iterators[key], true);
   }
 }
-
-
-/***/ }),
-
-/***/ "f7c1":
-/***/ (function(module, exports) {
-
-exports.f = Object.getOwnPropertySymbols;
-
-
-/***/ }),
-
-/***/ "f9f2":
-/***/ (function(module, exports, __webpack_require__) {
-
-// most Object methods by ES6 should accept primitives
-var $export = __webpack_require__("b2f5");
-var core = __webpack_require__("a4cc");
-var fails = __webpack_require__("b6f1");
-module.exports = function (KEY, exec) {
-  var fn = (core.Object || {})[KEY] || Object[KEY];
-  var exp = {};
-  exp[KEY] = exec(fn);
-  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);
-};
-
-
-/***/ }),
-
-/***/ "fb37":
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__("db4b");
-var $keys = __webpack_require__("cfc7");
-
-__webpack_require__("f9f2")('keys', function () {
-  return function keys(it) {
-    return $keys(toObject(it));
-  };
-});
 
 
 /***/ }),

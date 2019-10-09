@@ -2,11 +2,12 @@
 你可以引入整个 Jdk-UI，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 Jdk-UI。
 
 ###  完整引入
-在 main.js 中写入以下内容：
+在 main.js 中写入以下内容：支持一次性导入所有组件，引入所有组件会增加代码包体积，因此不推荐这种做法
 
 ``` vue
 import Vue from 'vue';
 import JdkUI from 'jdk-ui';
+import 'jdk-ui/dist/jdk.css'
 import App from './App.vue';
 
 Vue.use(JdkUI);
@@ -22,12 +23,12 @@ new Vue({
 ```
 
 ### 按需引入
-借助 babel-plugin-component，我们可以只引入需要的组件，以达到减小项目体积的目的。
+babel-plugin-import 是一款 babel 插件，它会在编译过程中将 import 的写法自动转换为按需引入的方式
 
-首先，安装 babel-plugin-component：
+# 安装插件
 
 ```
-npm install babel-plugin-component -D
+npm i babel-plugin-import -D
 ```
 然后，将 .babelrc 修改为：
 
@@ -36,11 +37,11 @@ npm install babel-plugin-component -D
   "plugins": [
     [
       "import",
-      {
-        "libraryName": "jdk-ui",
-        "styleLibraryName": "src/components"
-        "style": false
-      }, "jdk-ui"
+     {
+				"libraryName": "jdk-ui",
+				"libraryDirectory": "src/components",
+				"style": false
+			}, "jdk-ui"
     ]
   ]
 }

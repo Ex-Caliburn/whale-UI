@@ -81,15 +81,6 @@
     mounted() {},
     methods: {
       handleClick(evt) {
-        // if (this.to) {
-        //   if (typeof this.to === 'string') {
-        //     this.$router.push({ name: this.to })
-        //   } else if (Object.prototype.toString.call(this.to) == '[object Object]') {
-        //     this.$router.push(this.to)
-        //   } else {
-        //     console.error('to 值不合法')
-        //   }
-        // }
         this.$emit('click', evt)
       }
     }
@@ -103,7 +94,7 @@
 	}
 	.jdk-button {
 		cursor: pointer;
-		max-width: 540px;
+		/*max-width: 540Px;*/
 		color: #333;
 		display: flex;
 		justify-content: center;
