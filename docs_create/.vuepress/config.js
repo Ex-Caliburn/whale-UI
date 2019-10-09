@@ -19,6 +19,7 @@ module.exports = {
         sidebar: [
           ['/views/guide', '快速上手'],
           ['/views/button', '按钮 Button'],
+          ['/views/imagePreviewer', '图片预览 ImagePreviewer'],
         ],
       // 第三方搜索
       // algolia: {
