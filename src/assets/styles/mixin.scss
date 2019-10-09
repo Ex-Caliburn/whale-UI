@@ -1,0 +1,52 @@
+@mixin fullPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+//定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+//定位上下居中 vertical-center
+@mixin vc($left:0) {
+  position: absolute;
+  top: 50%;
+  transform: translate3d($left, -50%, 0);
+}
+
+//定位左右居中 horizontal-center
+@mixin hc($top:0) {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, $top, 0);
+}
+
+//省略号
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//多行省略号
+@mixin multilineEllipsis($lines:3) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
+
+//头像
+@mixin avatar($width) {
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+  vertical-align: middle;
+}

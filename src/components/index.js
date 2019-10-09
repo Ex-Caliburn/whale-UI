@@ -1,5 +1,6 @@
 import button from './button'
-let components = [button]
+import imagePreviewer from './imagePreviewer'
+let components = [button, imagePreviewer]
 var version = '0.1.4';
 function install(Vue) {
   components.forEach(function (Component) {
@@ -16,5 +17,5 @@ export default {
   install,
 }
 
-export { install, version, button};
+export { install, version, button, imagePreviewer};
 
