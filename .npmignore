@@ -1,4 +1,7 @@
 node_modules
+public
+docs
+docs_create
 .DS_Store
 .docs_create
 

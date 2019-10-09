@@ -142,7 +142,7 @@
 
 <script>
     import Vue from 'vue'
-    import jdk from '@src'
+    import jdk from '@components'
 		import '@/scss/docs.scss'
     Vue.use(jdk)
 
