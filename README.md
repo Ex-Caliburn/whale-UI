@@ -1,5 +1,7 @@
 # jdk-ui
 
+[项目地址](https://ex-caliburn.github.io/Jdk-UI/)
+
 ## Project setup
 ```
 npm install jdk-ui
