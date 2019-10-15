@@ -27,5 +27,14 @@ npm run test
 npm run lint
 ```
 
+## 发布流程:
+
+### 构建 推到git
+npm run build:docs
+npm push
+
+### 修改版本号发布到npm
+npm publish
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

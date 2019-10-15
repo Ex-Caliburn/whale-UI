@@ -94,7 +94,6 @@
 	}
 	.jdk-button {
 		cursor: pointer;
-		/*max-width: 540Px;*/
 		color: #333;
 		display: flex;
 		justify-content: center;

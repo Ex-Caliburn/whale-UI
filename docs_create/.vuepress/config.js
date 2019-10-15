@@ -20,6 +20,7 @@ module.exports = {
           ['/views/guide', '快速上手'],
           ['/views/button', '按钮 Button'],
           ['/views/imagePreviewer', '图片预览 ImagePreviewer'],
+          ['/views/messageBox', '消息盒子 MessageBox'],
         ],
       // 第三方搜索
       // algolia: {
