@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>图片预览 imagePreviewer | Jdk UI</title>
+    <meta name="description" content="Jdk UI Document">
+    <link rel="shortcut icon" href="/Jdk-UI/favicon.ico">
+    
+    <link rel="preload" href="/Jdk-UI/assets/css/0.styles.eaa15551.css" as="style"><link rel="preload" href="/Jdk-UI/assets/js/app.dd5406ee.js" as="script"><link rel="preload" href="/Jdk-UI/assets/js/4.e457164f.js" as="script"><link rel="preload" href="/Jdk-UI/assets/js/11.b159f893.js" as="script"><link rel="prefetch" href="/Jdk-UI/assets/js/1.5b20e933.js"><link rel="prefetch" href="/Jdk-UI/assets/js/10.2dadbc07.js"><link rel="prefetch" href="/Jdk-UI/assets/js/12.d11299ba.js"><link rel="prefetch" href="/Jdk-UI/assets/js/13.051e683b.js"><link rel="prefetch" href="/Jdk-UI/assets/js/14.91263133.js"><link rel="prefetch" href="/Jdk-UI/assets/js/2.43f77389.js"><link rel="prefetch" href="/Jdk-UI/assets/js/5.c41e7068.js"><link rel="prefetch" href="/Jdk-UI/assets/js/6.4bd162b7.js"><link rel="prefetch" href="/Jdk-UI/assets/js/7.d5c02a56.js"><link rel="prefetch" href="/Jdk-UI/assets/js/8.c627e7f8.js"><link rel="prefetch" href="/Jdk-UI/assets/js/9.2d94c6fc.js">
+    <link rel="stylesheet" href="/Jdk-UI/assets/css/0.styles.eaa15551.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Jdk-UI/" class="home-link router-link-active"><!----> <span class="site-name">Jdk UI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Jdk-UI/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI#readme" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Jdk-UI/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI#readme" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Jdk-UI/views/guide.html" class="sidebar-link">快速上手</a></li><li><a href="/Jdk-UI/views/button.html" class="sidebar-link">按钮 Button</a></li><li><a href="/Jdk-UI/views/imagePreviewer.html" class="sidebar-link">图片预览 ImagePreviewer</a></li><li><a href="/Jdk-UI/views/messageBox.html" class="active sidebar-link">消息盒子 MessageBox</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Jdk-UI/views/toast.html" class="sidebar-link">轻提示 toast</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="图片预览-imagepreviewer"><a href="#图片预览-imagepreviewer" class="header-anchor">#</a> 图片预览 imagePreviewer</h3> <h4 id="提示框"><a href="#提示框" class="header-anchor">#</a> 提示框</h4> <div class="component-wrapper"><button href="" class="jdk-button jdk-button--small jdk-button--success jdk-button--80" data-v-c552bf42>提示</button></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>success<span class="token punctuation">'</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>small<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>80<span class="token punctuation">'</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>warn<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>提示<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jdk-button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code>export default {
+		data () {
+				return {
+				}
+		},
+		methods: {
+			warn() {
+				this.$JdkAlert({
+							confirmButtonText: '我知道了',
+							msg: `直播已经结束，你还有20秒的时间跟学员进行进一步的互动。`
+						}).catch(err =&gt; {
+							console.log(err)
+						})
+			}
+		}
+}
+</code></pre></div><h4 id="确认框"><a href="#确认框" class="header-anchor">#</a> 确认框</h4> <div class="component-wrapper"><button href="" class="jdk-button jdk-button--small jdk-button--success jdk-button--80" data-v-c552bf42>确认</button></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>success<span class="token punctuation">'</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>small<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>80<span class="token punctuation">'</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>confirm<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>确认<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jdk-button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code>
+export default {
+		data () {
+				return {
+					weChat: 'Mr_Bigshoot'
+				}
+		},
+		methods: {
+			confirm() {
+				this.$JdkConfirm({
+						confirmButtonText: '好的',
+						cancelButtonText: '稍后再说',
+						msg: `可添加微信：${this.weChat}，向我们咨询课程信息。`
+					})
+						.then(() =&gt; {
+							console.log('好的')
+						})
+						.catch(err =&gt; {
+							console.log(err)
+						})
+			}
+		}
+}
+</code></pre></div><h4 id="确认框-带复制功能"><a href="#确认框-带复制功能" class="header-anchor">#</a> 确认框 带复制功能</h4> <div class="component-wrapper"><button href="" class="jdk-button jdk-button--small jdk-button--success jdk-button--80" data-v-c552bf42>确认</button></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>success<span class="token punctuation">'</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>small<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>80<span class="token punctuation">'</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>copyConfirm<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>确认<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jdk-button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code>// 复制到剪切板
+import Vue from 'vue'
+import VueClipBoards from 'vue-clipboards'
+Vue.use(VueClipBoards);
+
+export default {
+		data () {
+				return {
+					weChat: 'Mr_Bigshoot'
+				}
+		},
+		methods: {
+			copyConfirm() {
+				this.$JdkConfirm({
+						confirmButtonText: '复制微信号',
+						cancelButtonText: '稍后再说',
+						confirmButtonMode: 'copy',
+						copyTxt: this.weChat,
+						msg: `可添加微信：${this.weChat}，向我们咨询课程信息。`
+					})
+						.then(() =&gt; {
+							console.log('复制成功')
+						})
+						.catch(err =&gt; {
+							console.log(err)
+						})
+			}
+		}
+}
+</code></pre></div><h4 id="api"><a href="#api" class="header-anchor">#</a> API</h4> <p>通过函数调用 $JdkAlert, $JdkConfirm 时，支持传入以下选项：</p> <table><thead><tr><th style="text-align:left;">属性</th> <th style="text-align:left;">说明</th> <th style="text-align:left;">类型</th> <th style="text-align:left;">默认值</th></tr></thead> <tbody><tr><td style="text-align:left;">msg</td> <td style="text-align:left;">消息文字</td> <td style="text-align:left;">String</td> <td style="text-align:left;">''</td></tr> <tr><td style="text-align:left;">title</td> <td style="text-align:left;">标题</td> <td style="text-align:left;">String</td> <td style="text-align:left;">''</td></tr> <tr><td style="text-align:left;">type</td> <td style="text-align:left;">消息文字 可选值: alert / confirm</td> <td style="text-align:left;">String</td> <td style="text-align:left;">''</td></tr> <tr><td style="text-align:left;">width</td> <td style="text-align:left;">弹窗宽度</td> <td style="text-align:left;">String/Number</td> <td style="text-align:left;">260px</td></tr> <tr><td style="text-align:left;">confirmButtonText</td> <td style="text-align:left;">确定按钮文本</td> <td style="text-align:left;">String</td> <td style="text-align:left;">确定</td></tr> <tr><td style="text-align:left;">cancelButtonText</td> <td style="text-align:left;">取消按钮文本</td> <td style="text-align:left;">String</td> <td style="text-align:left;">取消</td></tr> <tr><td style="text-align:left;">confirmButtonMode</td> <td style="text-align:left;">模式选择， 可选值: mode(复制模式)/ ''</td> <td style="text-align:left;">String</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">copyTxt</td> <td style="text-align:left;">复制文本</td> <td style="text-align:left;">String</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">confirmButtonClass</td> <td style="text-align:left;">确定按钮样式</td> <td style="text-align:left;">String</td> <td style="text-align:left;">-</td></tr> <tr><td style="text-align:left;">cancelButtonClass</td> <td style="text-align:left;">取消按钮样式'</td> <td style="text-align:left;">String</td> <td style="text-align:left;">-</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Jdk-UI/views/imagePreviewer.html" class="prev">图片预览 ImagePreviewer</a></span> <span class="next"><a href="/Jdk-UI/views/toast.html">轻提示 toast</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Jdk-UI/assets/js/app.dd5406ee.js" defer></script><script src="/Jdk-UI/assets/js/4.e457164f.js" defer></script><script src="/Jdk-UI/assets/js/11.b159f893.js" defer></script>
+  </body>
+</html>

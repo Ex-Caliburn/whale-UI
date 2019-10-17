@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>提示 toast | Jdk UI</title>
+    <meta name="description" content="Jdk UI Document">
+    <link rel="shortcut icon" href="/Jdk-UI/favicon.ico">
+    
+    <link rel="preload" href="/Jdk-UI/assets/css/0.styles.eaa15551.css" as="style"><link rel="preload" href="/Jdk-UI/assets/js/app.dd5406ee.js" as="script"><link rel="preload" href="/Jdk-UI/assets/js/4.e457164f.js" as="script"><link rel="preload" href="/Jdk-UI/assets/js/12.d11299ba.js" as="script"><link rel="prefetch" href="/Jdk-UI/assets/js/1.5b20e933.js"><link rel="prefetch" href="/Jdk-UI/assets/js/10.2dadbc07.js"><link rel="prefetch" href="/Jdk-UI/assets/js/11.b159f893.js"><link rel="prefetch" href="/Jdk-UI/assets/js/13.051e683b.js"><link rel="prefetch" href="/Jdk-UI/assets/js/14.91263133.js"><link rel="prefetch" href="/Jdk-UI/assets/js/2.43f77389.js"><link rel="prefetch" href="/Jdk-UI/assets/js/5.c41e7068.js"><link rel="prefetch" href="/Jdk-UI/assets/js/6.4bd162b7.js"><link rel="prefetch" href="/Jdk-UI/assets/js/7.d5c02a56.js"><link rel="prefetch" href="/Jdk-UI/assets/js/8.c627e7f8.js"><link rel="prefetch" href="/Jdk-UI/assets/js/9.2d94c6fc.js">
+    <link rel="stylesheet" href="/Jdk-UI/assets/css/0.styles.eaa15551.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Jdk-UI/" class="home-link router-link-active"><!----> <span class="site-name">Jdk UI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Jdk-UI/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI#readme" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Jdk-UI/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI#readme" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Ex-Caliburn/Jdk-UI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Jdk-UI/views/guide.html" class="sidebar-link">快速上手</a></li><li><a href="/Jdk-UI/views/button.html" class="sidebar-link">按钮 Button</a></li><li><a href="/Jdk-UI/views/imagePreviewer.html" class="sidebar-link">图片预览 ImagePreviewer</a></li><li><a href="/Jdk-UI/views/messageBox.html" class="sidebar-link">消息盒子 MessageBox</a></li><li><a href="/Jdk-UI/views/toast.html" class="active sidebar-link">轻提示 toast</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="提示-toast"><a href="#提示-toast" class="header-anchor">#</a> 提示 toast</h3> <h4 id="提示框-基本用法"><a href="#提示框-基本用法" class="header-anchor">#</a> 提示框 基本用法</h4> <div class="component-wrapper"><button href="" class="jdk-button jdk-button--small jdk-button--success jdk-button--80" data-v-c552bf42>提示</button></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>success<span class="token punctuation">'</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>small<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>80<span class="token punctuation">'</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>toast<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>提示<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jdk-button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code>export default {
+		data () {
+				return {
+				}
+		},
+		methods: {
+			toast() {
+				this.$JdkToast({ msg: '充值成功' })
+			},
+		}
+}
+</code></pre></div><h4 id="确认框-警告"><a href="#确认框-警告" class="header-anchor">#</a> 确认框 警告</h4> <div class="component-wrapper"><button href="" class="jdk-button jdk-button--small jdk-button--success jdk-button--80" data-v-c552bf42>警告</button></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>success<span class="token punctuation">'</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>small<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>80<span class="token punctuation">'</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>toastError<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>警告<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jdk-button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code>
+export default {
+		methods: {
+			toastError () {
+				this.$JdkToast({
+					type: 'error',
+					msg: '充值失败'
+				})
+			},
+		}
+}
+</code></pre></div><h4 id="确认框-提示文字"><a href="#确认框-提示文字" class="header-anchor">#</a> 确认框 提示文字</h4> <div class="component-wrapper"><button href="" class="jdk-button jdk-button--small jdk-button--success jdk-button--80" data-v-c552bf42>提示文字</button></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>success<span class="token punctuation">'</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>small<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>80<span class="token punctuation">'</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>toastTip<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>提示文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jdk-button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code>export default {
+		methods: {
+			toastTip () {
+				 this.$JdkToast({
+					 msg: '充值成功',
+					 tip: `当前充值点数100点`
+				 })
+			},
+		}
+}
+</code></pre></div><h4 id="确认框-修改持续时间"><a href="#确认框-修改持续时间" class="header-anchor">#</a> 确认框 修改持续时间</h4> <div class="component-wrapper"><button href="" class="jdk-button jdk-button--small jdk-button--success jdk-button--80" data-v-c552bf42>提示</button></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>success<span class="token punctuation">'</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>small<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>80<span class="token punctuation">'</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>toastDuration<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>提示文/jdk-button&gt;
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code>export default {
+		methods: {
+			toastDuration () {
+				 this.$JdkToast({
+					 msg: '充值成功',
+					 tip: `当前充值点数100点`,
+					 duration: 20000
+				 })
+			},
+		}
+}
+</code></pre></div><h4 id="api"><a href="#api" class="header-anchor">#</a> API</h4> <p>通过函数调用 $JdkToast 时，支持传入以下选项：</p> <table><thead><tr><th style="text-align:left;">属性</th> <th style="text-align:left;">说明</th> <th style="text-align:left;">类型</th> <th style="text-align:left;">默认值</th></tr></thead> <tbody><tr><td style="text-align:left;">msg</td> <td style="text-align:left;">消息文字</td> <td style="text-align:left;">String</td> <td style="text-align:left;">''</td></tr> <tr><td style="text-align:left;">tip</td> <td style="text-align:left;">提示</td> <td style="text-align:left;">String</td> <td style="text-align:left;">''</td></tr> <tr><td style="text-align:left;">type</td> <td style="text-align:left;">消息类型 可选值: error / success</td> <td style="text-align:left;">String</td> <td style="text-align:left;">'success'</td></tr> <tr><td style="text-align:left;">duration</td> <td style="text-align:left;">持续时间,0则不会自动关闭</td> <td style="text-align:left;">String/Number</td> <td style="text-align:left;">2000</td></tr> <tr><td style="text-align:left;">closeOnHashChange</td> <td style="text-align:left;">路由切换是否关闭</td> <td style="text-align:left;">Boolean</td> <td style="text-align:left;">true</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Jdk-UI/views/messageBox.html" class="prev">消息盒子 MessageBox</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Jdk-UI/assets/js/app.dd5406ee.js" defer></script><script src="/Jdk-UI/assets/js/4.e457164f.js" defer></script><script src="/Jdk-UI/assets/js/12.d11299ba.js" defer></script>
+  </body>
+</html>
