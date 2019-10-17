@@ -21,6 +21,7 @@ module.exports = {
           ['/views/button', '按钮 Button'],
           ['/views/imagePreviewer', '图片预览 ImagePreviewer'],
           ['/views/messageBox', '消息盒子 MessageBox'],
+          ['/views/toast', '轻提示 toast'],
         ],
       // 第三方搜索
       // algolia: {

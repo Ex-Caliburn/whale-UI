@@ -1,7 +1,8 @@
 import button from './button'
 import imagePreviewer from './imagePreviewer'
 import messageBox from './messageBox'
-let components = [button, imagePreviewer, messageBox]
+import toast from './toast'
+let components = [button, imagePreviewer, messageBox, toast]
 var version = '0.1.4';
 function install(Vue) {
   components.forEach(function (Component) {
@@ -18,5 +19,5 @@ export default {
   install,
 }
 
-export { install, version, button, imagePreviewer, messageBox};
+export { install, version, button, imagePreviewer, messageBox, toast};
 
