@@ -24,7 +24,7 @@ export default {
         iconClass: '', // string 自定义图标的类名，会覆盖 type
         tip: '', // 提示
         type: 'success', // string	success/error
-        closeOnHashChange: true // 是否在 hashchange 时关闭
+        closeOnHashChange: close // 是否在 hashchange 时关闭
       },
       iconArr: {
         success: 'iconicon_success_white',
@@ -32,24 +32,35 @@ export default {
       }
     }
   },
+  mounted() {
+    this.$nextTick(() => {
+      if (this.toast.closeOnHashChange) {
+        window.addEventListener('hashchange', this.close)
+      }
+    })
+  },
   methods: {
     show(params) {
       //初始化参数
       this.isShow = true
       this.toast = Object.assign(
         this.toast,
-        { duration: 3000, tip: '', closeOnHashChange: true, type: 'success', iconClass: '' },
+        { duration: 3000, tip: '', closeOnHashChange: close, type: 'success', iconClass: '' },
         params
       )
       // 显示时间, 毫秒。设为 0 则不会自动关闭
       if (this.toast.duration) {
         setTimeout(() => {
-          this.isShow = false
+          this.close()
         }, this.toast.duration)
       }
     },
     close() {
+      if (this.toast.closeOnHashChange) {
+        window.removeEventListener('hashchange', this.close)
+      }
       this.isShow = false
+      this.$el.parentNode && this.$el.parentNode.removeChild(this.$el)
     }
   },
 }
