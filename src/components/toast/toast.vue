@@ -38,7 +38,7 @@ export default {
       this.isShow = true
       this.toast = Object.assign(
         this.toast,
-        { duration: 3000, closeOnHashChange: true, type: 'success', iconClass: '' },
+        { duration: 3000, tip: '', closeOnHashChange: true, type: 'success', iconClass: '' },
         params
       )
       // 显示时间, 毫秒。设为 0 则不会自动关闭

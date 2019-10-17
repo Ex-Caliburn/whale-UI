@@ -31,6 +31,7 @@ npm run lint
 
 ### 构建 推到git
 npm run build:docs
+npm run build:lib
 npm push
 
 ### 修改版本号发布到npm
