@@ -17,11 +17,12 @@ module.exports = {
             { text: 'Github', link: 'https://github.com/Ex-Caliburn/Jdk-UI' },
         ],
         sidebar: [
-          ['/views/guide', '快速上手'],
-          ['/views/button', '按钮 Button'],
-          ['/views/imagePreviewer', '图片预览 ImagePreviewer'],
-          ['/views/messageBox', '消息盒子 MessageBox'],
+          ['/views/guide', '快速上手 guide'],
+          ['/views/button', '按钮 button'],
+          ['/views/imagePreviewer', '图片预览 imagePreviewer'],
+          ['/views/messageBox', '消息盒子 messageBox'],
           ['/views/toast', '轻提示 toast'],
+          ['/views/InterfaceExample', '接口 InterfaceExample'],
         ],
       // 第三方搜索
       // algolia: {

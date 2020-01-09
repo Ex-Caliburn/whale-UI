@@ -56,6 +56,7 @@ export default {
       msgBox: {
         msg: '', // 消息文字
         iconClass: '', //  自定义图标的类名，会覆盖 type
+        width: '', // 弹窗宽度
         title: '', // 提示
         type: '', // 	success / info / warning / error
         closeOnHashChange: true, // 是否在 hashchange 时关闭
@@ -115,7 +116,7 @@ export default {
           closeOnHashChange: true,
           closeOnClickModal: false,
           title: '',
-          width: '260',
+          width: '',
           showCancelButton: true,
           confirmButtonClass: '',
           cancelButtonClass: '',

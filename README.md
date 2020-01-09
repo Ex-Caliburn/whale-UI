@@ -35,7 +35,14 @@ npm run build:lib
 npm push
 
 ### 修改版本号发布到npm
+package.json 中 "version": "0.1.11"
+/components/index.js 中 var version = '0.1.4'
 npm publish
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### step hole 踩坑
+1. 文件名不能为中文
+2. 如何引入全局样式 暂未找到好办法，需要每个文件都引入 docs.scss
+3. 引入字体图标 转为base64
